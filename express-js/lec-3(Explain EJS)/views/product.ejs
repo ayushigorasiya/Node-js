@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+
+    <style>
+        /* Basic reset for margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg'); /* Replace with your actual background image URL */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Header styles */
+        h1 {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-flex-group: rgba(255, 255, 255, 0.284);
+            width: 100%;
+        }
+
+        /* Navigation bar styles */
+        nav {
+            background-color: #444;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 15px;
+            font-size: 16px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #666;
+        }
+
+        /* Main content area for product details */
+        .product-section {
+            max-width: 1200px;
+            margin: 40px;
+            text-align: center;
+        }
+
+        .product-section h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .product-card {
+            display: inline-block;
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            height: 350px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+
+        .product-card .product-title {
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .product-card .product-description {
+            font-size: 1em;
+            color: #777;
+            margin-top: 5px;
+        }
+
+        .product-card .price {
+            font-size: 1.5em;
+            color: #2ecc71;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>
+        This Is Product Page .....!
+    </h1>
+
+    <!-- Navigation bar -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/product">Product</a>
+        <a href="/con">Contact</a>
+    </nav>
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <h2>Featured Products</h2>
+
+        <!-- Product Card 1 -->
+        <div class="product-card">
+            <img src="https://www.biba.in/dw/image/v2/BKQK_PRD/on/demandware.static/-/Sites-biba-product-catalog/default/dw6b1f9c71/images/aw24/skdbold10476aw24grn_1.jpg?sw=502&sh=753" alt="Product Image 1">
+            <div class="product-title">Product 1</div>
+            <div class="product-description">This is a description for Product 1.</div>
+            <div class="price">$199.99</div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card">
+            <img src="https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?cs=srgb&dl=pexels-kowalievska-1055691.jpg&fm=jpg" alt="Product Image 2">
+            <div class="product-title">Product 2</div>
+            <div class="product-description">This is a description for Product 2.</div>
+            <div class="price">$299.99</div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card">
+            <img src="https://cdn14.nnnow.com/web-images/large/styles/46E155JIE1P/1694169225037/1.jpg" alt="Product Image 3">
+            <div class="product-title">Product 3</div>
+            <div class="product-description">This is a description for Product 3.</div>
+            <div class="price">$399.99</div>
+        </div>
+    </div>
+
+</body>
+</html>
